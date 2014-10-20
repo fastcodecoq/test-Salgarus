@@ -1,0 +1,32 @@
+<section class='home animated' ng-animate>
+      
+
+      <div class="books" ng-controller="booksCtrl">
+
+             <ul style="list-style:none" >
+                 <li ng-repeat="book in books">
+                 <br>
+                     <table>
+                     <tr>
+                       <td>
+                       <article>
+                       <h4>{{book.nombre}}</h4>
+                       <br>
+                       <p>
+                       <img src="{{book.img}}" alt="">
+                       <br>
+                       <a href='{{book.url}}'>Ver libro</a>
+                       </p>
+                        </article>
+
+                       </td>           
+                       </tr>
+                     </table>
+                     <br>
+                 </li>
+             </ul>
+
+      </div>
+   
+</section>
+             
